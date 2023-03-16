@@ -99,9 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       const err = await response.text();
 
-      messageDiv.innerHTML = "Something went wrong... Please try again!";
+      messageDiv.innerHTML = "<div style='color: red;'>Something went wrong... Please try again!</div>";
 
-      alert(err);
     }
   };
 
